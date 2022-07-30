@@ -8,7 +8,7 @@ public class Main {
         for (int i = arrayFirst.length - 1; i >= 0; i--)
             if (i == arrayFirst.length - 3) {
                 System.out.print(arrayFirst[i]);
-            }else{
+            } else {
                 System.out.print(arrayFirst[i] + ",");
             }
         System.out.println("");
@@ -27,5 +27,16 @@ public class Main {
             } else {
                 System.out.print(arrayThird[i] + ",");
             }
+        System.out.println();
+        for (int i = 0; i < arrayFirst.length; i++) {
+            if (arrayFirst[i] % 2 != 0) {
+                arrayFirst[i] = arrayFirst[i] + 1;
+            }
+            if (i < arrayFirst.length - 1)
+                System.out.print(arrayFirst[i] + ",");
+            else {
+                System.out.print(arrayFirst[i]);
+            }
+        }
     }
 }
